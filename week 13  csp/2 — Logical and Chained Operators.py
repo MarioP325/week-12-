@@ -28,13 +28,16 @@ else:   print("F")
 # Practice Problems:
 
 # Write an expression that checks if a number is between 50 and 100 (inclusive).
-
+num=int(50)
+if num>=50 and num<=100: print("true")
+else:print("false")
 # Write an expression that checks if a number is NOT equal to 0 and greater than 10.
-
+if  num!=0 and num>10:print("true")
 # Use chained comparison to check if 3 < 4 < 5.
-
+if 3 < 4 < 5: print("true")
+else: print("loser")
 # Challenge: Create a password rule using logical operators:
 
 password=input("Enter password")
 if len(password)>=5 and len(password)<=10:print("valid")
-else: print("hi")
+else: print("invalid")
