@@ -37,3 +37,10 @@ else: print(False)
 30-20>=19
 # practice problem :
 # where a student must check if their score is greater than or equal to 60 to pass a test.# The password must be at least 8 characters long and contain at least one digit.password = "mypassword1"
+gradepass=int(input("What is your score"))
+if gradepass>=60: print("you passed")
+else: print("you failed")
+
+password=input("Enter you password")
+if len(password)>=8 and any(char.isdigit() for char in password): print("valid")
+else:print("invalid")
