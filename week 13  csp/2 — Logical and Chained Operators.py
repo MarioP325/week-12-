@@ -18,7 +18,13 @@ print(x < 5 or x == 10)   # True
 print(not(x == 10))       # False
 print(1 < x < 20)         # True
 
-
+#score calculator
+score=int(input("enter your score"))
+if 90 <= score<=100:print("A")
+elif 80 <= score<=89: print("B")
+elif 70 >= score<=79: print("C")
+elif 60>= score<=69: print("D")
+else:   print("F")
 # Practice Problems:
 
 # Write an expression that checks if a number is between 50 and 100 (inclusive).
@@ -29,3 +35,6 @@ print(1 < x < 20)         # True
 
 # Challenge: Create a password rule using logical operators:
 
+password=input("Enter password")
+if len(password)>=5 and len(password)<=10:print("valid")
+else: print("hi")
