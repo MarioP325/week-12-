@@ -1,6 +1,40 @@
 # Objective:
 # Students will understand how to create, modify, and access elements in Python lists.
 
+list1=[1,2,3]
+list2=[4,5,6]
+nested_list=[list1, list2]
+print(nested_list[1][2]) #output 6
+fruits=["apple", "orange", "banana", "coconut"]
+vegetables=["celery", "carrots", 'potatoes']
+meats=["chicken", "fish", "turkey"]
+groceries=[fruits,vegetables,meats]
+print(groceries[2][2])
+for collection in groceries :
+    for food in collection:
+            print(food, end=" ")
+            print()
+
+num_pad= ((1,2,3),
+          (4,5,6),
+          (7,8,9),
+          ("*", 0, "#"))
+for row in num_pad:
+      print(row)
+      for num in row:
+            print(num, end=" ")
+            print()
+
+matrix= [
+      [1,2,3],
+      [4,5,6],
+      [7,8,9]
+]
+print(matrix[2][2])
+#list comprehension
+example_list=[row[0] for row in matrix]
+
+
 # Topics Covered:
 # Creating lists, indexing, slicing, appending, popping, sorting, reversing.
 # lists are ordered collections of items
